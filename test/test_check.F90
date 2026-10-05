@@ -342,9 +342,6 @@ contains
   end subroutine test_rsp_nan
 
 
-  !> Reject NaN in the expected value
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rsp_abs_expected_nan(error)
 
     !> Error handling
@@ -355,9 +352,6 @@ contains
   end subroutine test_rsp_abs_expected_nan
 
 
-  !> Reject an infinite expected value in a relative comparison
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rsp_rel_expected_inf(error)
 
     !> Error handling
@@ -480,9 +474,6 @@ contains
   end subroutine test_rdp_nan
 
 
-  !> Reject NaN in the expected value
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rdp_abs_expected_nan(error)
 
     !> Error handling
@@ -493,9 +484,6 @@ contains
   end subroutine test_rdp_abs_expected_nan
 
 
-  !> Reject NaN in the threshold for unequal finite values
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rdp_abs_thr_nan(error)
 
     !> Error handling
@@ -506,9 +494,6 @@ contains
   end subroutine test_rdp_abs_thr_nan
 
 
-  !> Accept unequal finite values with an unlimited threshold
-  !>
-  !> @param[out] error Allocated if the comparison fails
   subroutine test_rdp_abs_thr_inf(error)
 
     !> Error handling
@@ -519,9 +504,6 @@ contains
   end subroutine test_rdp_abs_thr_inf
 
 
-  !> Reject an infinite difference even with an unlimited threshold
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rdp_abs_thr_inf_actual_inf(error)
 
     !> Error handling
@@ -533,9 +515,6 @@ contains
   end subroutine test_rdp_abs_thr_inf_actual_inf
 
 
-  !> Reject a negative infinite threshold for unequal finite values
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rdp_abs_thr_neginf(error)
 
     !> Error handling
@@ -546,9 +525,6 @@ contains
   end subroutine test_rdp_abs_thr_neginf
 
 
-  !> Reject an infinite expected value in an absolute comparison
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rdp_abs_expected_inf(error)
 
     !> Error handling
@@ -559,9 +535,6 @@ contains
   end subroutine test_rdp_abs_expected_inf
 
 
-  !> Reject an infinite expected value in a relative comparison
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rdp_rel_expected_inf(error)
 
     !> Error handling
@@ -572,9 +545,6 @@ contains
   end subroutine test_rdp_rel_expected_inf
 
 
-  !> Report a mismatch whose difference cannot be scaled to a percentage
-  !>
-  !> @param[out] error Allocated if the comparison fails
   subroutine test_rdp_abs_huge_diff(error)
 
     !> Error handling
@@ -585,9 +555,6 @@ contains
   end subroutine test_rdp_abs_huge_diff
 
 
-  !> Report a relative mismatch whose difference cannot be scaled to a percentage
-  !>
-  !> @param[out] error Allocated if the comparison fails
   subroutine test_rdp_rel_huge_diff(error)
 
     !> Error handling
@@ -598,9 +565,6 @@ contains
   end subroutine test_rdp_rel_huge_diff
 
 
-  !> Accept an exact zero match in relative mode
-  !>
-  !> @param[out] error Allocated if the comparison fails
   subroutine test_rdp_rel_zero(error)
 
     !> Error handling
@@ -611,9 +575,6 @@ contains
   end subroutine test_rdp_rel_zero
 
 
-  !> Accept matching infinities in relative mode
-  !>
-  !> @param[out] error Allocated if the comparison fails
   subroutine test_rdp_rel_equal_inf(error)
 
     !> Error handling
@@ -625,9 +586,6 @@ contains
   end subroutine test_rdp_rel_equal_inf
 
 
-  !> Reject a NaN threshold even for exact matches
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rdp_rel_equal_thr_nan(error)
 
     !> Error handling
@@ -1087,9 +1045,6 @@ contains
   end subroutine test_cdp_nan
 
 
-  !> Reject NaN in the expected real component
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_cdp_abs_expected_nan(error)
 
     !> Error handling
@@ -1101,9 +1056,6 @@ contains
   end subroutine test_cdp_abs_expected_nan
 
 
-  !> Reject NaN in the expected imaginary component
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_cdp_abs_expected_imag_nan(error)
 
     !> Error handling
@@ -1115,9 +1067,6 @@ contains
   end subroutine test_cdp_abs_expected_imag_nan
 
 
-  !> Reject a NaN threshold for unequal complex values
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_cdp_abs_thr_nan(error)
 
     !> Error handling
@@ -1129,9 +1078,6 @@ contains
   end subroutine test_cdp_abs_thr_nan
 
 
-  !> Reject an infinite expected value in a relative comparison
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_cdp_rel_expected_inf(error)
 
     !> Error handling
@@ -1143,9 +1089,6 @@ contains
   end subroutine test_cdp_rel_expected_inf
 
 
-  !> Report a mismatch whose difference cannot be scaled to a percentage
-  !>
-  !> @param[out] error Allocated if the comparison fails
   subroutine test_cdp_abs_huge_diff(error)
 
     !> Error handling
@@ -1156,9 +1099,6 @@ contains
   end subroutine test_cdp_abs_huge_diff
 
 
-  !> Accept unequal complex values with an unlimited threshold
-  !>
-  !> @param[out] error Allocated if the comparison fails
   subroutine test_cdp_abs_thr_inf(error)
 
     !> Error handling
@@ -1170,9 +1110,6 @@ contains
   end subroutine test_cdp_abs_thr_inf
 
 
-  !> Accept an exact complex zero match in relative mode
-  !>
-  !> @param[out] error Allocated if the comparison fails
   subroutine test_cdp_rel_zero(error)
 
     !> Error handling
@@ -1183,9 +1120,6 @@ contains
   end subroutine test_cdp_rel_zero
 
 
-  !> Accept matching complex infinities in relative mode
-  !>
-  !> @param[out] error Allocated if the comparison fails
   subroutine test_cdp_rel_equal_inf(error)
 
     !> Error handling
@@ -1913,9 +1847,6 @@ contains
   end subroutine test_rsp_absrel_fail
 
 
-  !> Reject an infinite expected value in a combined comparison
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rsp_absrel_expected_inf(error)
 
     !> Error handling
@@ -1969,9 +1900,6 @@ contains
   end subroutine test_rdp_absrel_fail
 
 
-  !> Reject NaN in the expected value of a combined comparison
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rdp_absrel_expected_nan(error)
 
     !> Error handling
@@ -1983,9 +1911,6 @@ contains
   end subroutine test_rdp_absrel_expected_nan
 
 
-  !> Reject a NaN absolute threshold even for exact matches
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rdp_absrel_thr_abs_nan(error)
 
     !> Error handling
@@ -1997,9 +1922,6 @@ contains
   end subroutine test_rdp_absrel_thr_abs_nan
 
 
-  !> Reject a NaN relative threshold even for exact matches
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rdp_absrel_thr_rel_nan(error)
 
     !> Error handling
@@ -2011,9 +1933,6 @@ contains
   end subroutine test_rdp_absrel_thr_rel_nan
 
 
-  !> Reject an infinite expected value in a combined comparison
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_rdp_absrel_expected_inf(error)
 
     !> Error handling
@@ -2025,9 +1944,6 @@ contains
   end subroutine test_rdp_absrel_expected_inf
 
 
-  !> Accept matching infinities in a combined comparison
-  !>
-  !> @param[out] error Allocated if the comparison fails
   subroutine test_rdp_absrel_equal_inf(error)
 
     !> Error handling
@@ -2123,9 +2039,6 @@ contains
   end subroutine test_cdp_absrel_fail
 
 
-  !> Reject NaN in the expected value of a combined comparison
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_cdp_absrel_expected_nan(error)
 
     !> Error handling
@@ -2138,9 +2051,6 @@ contains
   end subroutine test_cdp_absrel_expected_nan
 
 
-  !> Reject an infinite expected value in a combined comparison
-  !>
-  !> @param[out] error Allocated when the comparison rejects its inputs
   subroutine test_cdp_absrel_expected_inf(error)
 
     !> Error handling
@@ -2153,9 +2063,6 @@ contains
   end subroutine test_cdp_absrel_expected_inf
 
 
-  !> Accept matching infinities in a combined comparison
-  !>
-  !> @param[out] error Allocated if the comparison fails
   subroutine test_cdp_absrel_equal_inf(error)
 
     !> Error handling
